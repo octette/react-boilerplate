@@ -1,0 +1,71 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "flowtype"
+  ],
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "HOSTNAME": true,
+    "NOHMR": true,
+    "ASYNC_ROUTES": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "no-console": [
+      2,
+      {
+        "allow": [
+          "error",
+          "info"
+        ]
+      }
+    ],
+    "strict": [
+      0,
+      "global"
+    ],
+    "react/require-default-props": "off",
+    "no-underscore-dangle": "off",
+    "global-require": "off",
+    "react/sort-comp": "off",
+    "react/no-array-index-key": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1,
+    "flowtype/valid-syntax": 1
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
