@@ -25,7 +25,6 @@ class Header extends Component {
   }
   render() {
     return (
-       <div className="container">
           <Navbar color="faded" className="main-header" light toggleable>
           <NavbarToggler right onClick={this.toggle} />
           <NavbarBrand href="/">reactstrap</NavbarBrand>
@@ -37,16 +36,9 @@ class Header extends Component {
               <NavItem>
               <Link to="/account">Account</Link>
               </NavItem>
-              <NavItem>
-              <Link to="/payment">Payment</Link>
-              </NavItem>
-              <NavItem>
-              <Link to="/settings">Settings</Link>
-              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
-       </div>
     );
   }
 }
