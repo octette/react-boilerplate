@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
-import { Container, Row, Navbar} from 'reactstrap';
-import { Button, NavItem, NavDropdown, MenuItem, Breadcrumb, Nav} from 'react-bootstrap';
-
+import React from 'react';
 import Header from './Header';
 
-class Layout extends Component {
-    render() {
-        return(
-            <div className="main-layout">               
-                <div className="container">
-                <Header />         
-                {this.props.children}
-                </div>
-            </div>
-        )
-    }
-}
+const Layout = props => (
+  <div className="main-layout">
+    <div className="container">
+      <Header />
+      {props.children}
+    </div>
+  </div>
+);
+
+Layout.propTypes = {
+  children: React.PropTypes.node.isRequired,
+};
 
 export default Layout;
