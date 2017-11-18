@@ -1,12 +1,16 @@
-import React from 'react';
-import Route from './containers/Route';
+import React, { Component } from 'react';
+import Route from './routes/Routes';
 
 import './styles/main.scss';
 
-const App = () => (
-  <div className="main-app">
-    <Route />
-  </div>
-);
+class App extends Component {
+  render() {
+    return (
+      <div className="main-app">
+        <Route />
+      </div>
+    );
+  }
+}
 
 export default App;
